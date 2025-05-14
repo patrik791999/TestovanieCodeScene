@@ -1,5 +1,5 @@
 ﻿public class BuggyCalculator {
-    private int lastResult = 0; // Nepoužívaná premenná
+    private int lastResult = 0;
 
     public int add(int a, int b) {
         return a + b;
@@ -9,7 +9,11 @@
         return a - b;
     }
 
-    public int MULTIPLY(int a, int b) { // Porušenie camelCase
+    public int MULTIPLY(int a, int b) {
         return a * b;
+    }
+
+    public int divide(int a, int b) { // Chýba kontrola delenia nulou
+        return a / b;
     }
 }
